@@ -1,0 +1,65 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+</head>
+<body>
+
+    <h2>Contact Me</h2>
+    <p>Fill out the form below to get in touch with me.</p>
+
+    <form>
+
+        <!-- Name -->
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name"
+        placeholder="Enter your name" required minlength="3">
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"
+        placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Phone -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"
+        placeholder="Enter 10-digit phone number"
+        pattern="[0-9]{10}" required>
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label><br>
+
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <!-- Message -->
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message"
+        rows="5" cols="30"
+        placeholder="Write your message here..."
+        required minlength="10"></textarea>
+        <br><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree to the terms and conditions.</label>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
